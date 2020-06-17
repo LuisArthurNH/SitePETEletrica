@@ -27,22 +27,37 @@
 
 
     <label for="nomeInput"> Nome: </label>
-    <input class="minhaClasse"  id="nomeInput"  placeholder="Nome" type="text">
+    <input id="nomeInput" class="minhaClasse"  placeholder="Nome" type="text">
 
 
-    <label for="dataNascimentoInput">Data de Nascimento: </label>
+    <label for="dataNascimentoInput"> Data de Nascimento: </label>
     <input id="dataNascimentoInput" placeholder="Data de Nascimento" type="date">
 
 
-    <button onclick="onButtonClick()"> Salvar </button>
+    <button id="botaoDeEnvio" > Salvar </button>
+
+    <div id="conteudo"></div>
+
 
 </div>
 
 <script>
 
-    function onButtonClick(){
+    const onButtonClick = () => {
         console.log("clicou");
+        const nomeInput =  document.getElementById("nomeInput");
+        nomeInput.style.padding = "20px";
+        console.log(nomeInput.value);
     }
+
+    // const printaOla = () => {
+    //     console.log("olá");
+    // }
+
+    document.getElementById("botaoDeEnvio").addEventListener("click", () => {onButtonClick()});
+    document.getElementById("conteudo").innerHTML = "<h1>Oláaaa</h1>"
+
+    // setInterval( () => {printaOla()}, 1000);
 
 
 

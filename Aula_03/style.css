@@ -1,0 +1,30 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("creationofman.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h1 {
+    color: blue;
+}
+
+
+.minhaClasse {
+    margin: 10px;
+}
+
+
+.caixa-branca {
+    background-color: white;
+    padding: 16px;
+    width: 30%;
+    height: 500px;
+}

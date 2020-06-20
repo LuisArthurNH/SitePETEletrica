@@ -9,10 +9,14 @@
 
     <title> PET Elétrica UFJF </title>
 
+    <!-- CSS  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="logopetslack.png">
+    <link rel="shortcut icon" href="../images/logopetslack.png">
+
+    <!-- JavaScript -->
+    <!-- <script src="script.js" type="javascript" ></script> -->
     
 </head>
 
@@ -22,45 +26,45 @@
 <h1> Bem vindo ao site do PET Elétrica </h1>
 
 
-<div class="caixa-branca d-flex flex-column">
+<div class="whitebox d-flex flex-column">
     <h2>Cadastrar Estudante</h2>
 
-    <span class="espaco"> </span>
+    <span class="espaco1"> </span>
     <h4>Geral</h4>
 
 
     <label for="nomeInput"> Nome: </label>
-    <input id="nomeInput" class="minhaClasse"  placeholder="Nome" type="text">
+    <input id="nomeInput" class="txtWhiteBox"  placeholder="Nome" type="text">
 
 
     <label for="dataNascimentoInput"> Data de Nascimento: </label>
-    <input id="dataNascimentoInput" class="minhaClasse" placeholder="Data de Nascimento" type="date">
+    <input id="dataNascimentoInput" class="txtWhiteBox" placeholder="Data de Nascimento" type="date">
 
 
     <label for="telefoneInput"> Telefone: </label>
-    <input id="telefoneInput" class="minhaClasse"  placeholder=" Telefone" type="text">
+    <input id="telefoneInput" class="txtWhiteBox"  placeholder=" Telefone" type="text">
 
 
     <label for="cursoInput"> Curso: </label>
-    <input id="cursoInput" class="minhaClasse"  placeholder=" Curso" type="text">
+    <input id="cursoInput" class="txtWhiteBox"  placeholder=" Curso" type="text">
 
     <label for="habilitacaoInput"> Telefone: </label>
-    <input id="habilitacaoInput" class="minhaClasse"  placeholder=" Habilitação" type="text">
+    <input id="habilitacaoInput" class="txtWhiteBox"  placeholder=" Habilitação" type="text">
 
     <span class="espaco"> </span>
     <h4>Endereço</h4>
 
     <label for="ruaInput"> Rua: </label>
-    <input id="ruaInput" class="minhaClasse"  placeholder=" Rua" type="text">
+    <input id="ruaInput" class="txtWhiteBox"  placeholder=" Rua" type="text">
 
 
     <label for="numeroInput"> Número: </label>
-    <input id="numeroInput" class="minhaClasse"  placeholder=" número" type="text">
+    <input id="numeroInput" class="txtWhiteBox"  placeholder=" número" type="text">
 
     <label for="cidadeInput"> Cidade: </label>
-    <input id="cidadeInput" class="minhaClasse"  placeholder=" Cidade" type="text">
+    <input id="cidadeInput" class="txtWhiteBox"  placeholder=" Cidade" type="text">
 
-    <span class="espaco"> </span>
+    <span class="espaco1"> </span>
 
     <button id="botaoDeEnvio" class="botaodeEnvio" > Salvar </button>
 
@@ -70,19 +74,24 @@
 </div>
 
 <script>
-
+    
     const onButtonClick = () => {
 
-        const obj = {
-            nomeInput:            document.getElementById("nomeInput").value,
-            dataNascimentoInput:  document.getElementById("dataNascimentoInput"),
-            cursoInput:           document.getElementById("cursoInput").value,
-        };
-        if (typeof (obj.dataNascimentoInput) == 'undefined') {
-            console.log("entrou")
-            document.getElementById("nomeInput").innerHTML = "campo vazio";
-        }
-        console.log(obj.nomeInput, obj.cursoInput);
+    const obj = {
+        nomeInput:            document.getElementById("nomeInput").value,
+        dataNascimentoInput:  document.getElementById("dataNascimentoInput").value,
+        cursoInput:           document.getElementById("cursoInput").value,
+    };
+    
+    // printa na tela as informações atraves de um alert
+    alert(obj.nomeInput, obj.cursoInput);
+
+    if (typeof (obj.dataNascimentoInput) == "") {
+        alert("não digitou algum campo");
+        document.getElementById("nomeInput").innerHTML = "campo vazio";
+    }
+
+
     }
 
     // const printaOla = () => {
@@ -94,9 +103,9 @@
 
     // setInterval( () => {printaOla()}, 1000);
 
-
-
 </script>
+
+
 
 
 </body>

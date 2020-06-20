@@ -4,7 +4,7 @@ body {
 }
 
 body {
-    background-image: url("87540.jpg");
+    background-image: url("../images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,24 +13,27 @@ body {
 }
 
 h1 {
-    color: white;
+    color: darkblue;
+    text-shadow: 1px 1px white;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
 }
 
-.minhaClasse {
+.txtwhitebox {
     margin-top: 0px;
     margin-bottom: 5px;
 
 }
 
 
-.caixa-branca {
+.whitebox {
     background-color: white;
     padding: 15px;
     width: 30%;
     height: 100%;
 }
 
-.espaco{
+.espaco1{
     margin-bottom: 20px;
 }
 

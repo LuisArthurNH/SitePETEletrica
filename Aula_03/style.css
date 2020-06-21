@@ -14,27 +14,46 @@ body {
 
 h1 {
     color: darkblue;
-    text-shadow: 1px 1px white;
-    margin-top: 1%;
+    text-shadow: 0.5px 1px white;
+    margin-top: 1.5%;
     margin-bottom: 1.5%;
-}
-
-.txtwhitebox {
-    margin-top: 0px;
-    margin-bottom: 5px;
-
 }
 
 
 .whitebox {
     background-color: white;
     padding: 15px;
-    width: 30%;
+    width: 20%;
     height: 100%;
 }
 
+.headerWhiteBox{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.fieldsWhiteBox {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-left: 1%;
+
+}
+
+#dataNascimentoInput {
+    color: grey;
+}
+
 .espaco1{
+    margin-top: 10px;
     margin-bottom: 20px;
+}
+
+/* Como é um ID, usar # */
+#ver {
+    color: red;
+    font-weight: bold;
+    
+
 }
 
 .botaodeEnvio
@@ -42,4 +61,7 @@ h1 {
     color: white;
     background-color: royalblue;
     padding: 5px;
+    font-weight: bold;
+    
 }
+

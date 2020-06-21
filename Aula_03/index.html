@@ -1,112 +1,126 @@
 <!doctype html>
 <html lang="pt">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title> PET Elétrica UFJF </title>
+        <title> PET Elétrica UFJF </title>
 
-    <!-- CSS  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="../images/logopetslack.png">
+        <!-- CSS  -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="../images/logopetslack.png">
 
-    <!-- JavaScript -->
-    <!-- <script src="script.js" type="javascript" ></script> -->
-    
-</head>
-
-
-<body class="d-flex flex-column align-items-center">
-
-<h1> Bem vindo ao site do PET Elétrica </h1>
+        <!-- JavaScript -->
+        <!-- <script src="script.js" type="javascript" ></script> -->
+        
+    </head>
 
 
-<div class="whitebox d-flex flex-column">
-    <h2>Cadastrar Estudante</h2>
+    <body class="d-flex flex-column align-items-center">
 
-    <span class="espaco1"> </span>
-    <h4>Geral</h4>
+        <h1> Bem vindo ao site do PET Elétrica </h1>
 
 
-    <label for="nomeInput"> Nome: </label>
-    <input id="nomeInput" class="txtWhiteBox"  placeholder="Nome" type="text">
+        <div class="whitebox d-flex flex-column">
+            <h2>Cadastrar Estudante</h2>
+
+            <span class="espaco1"> </span>
+            <h4>Geral</h4>
 
 
-    <label for="dataNascimentoInput"> Data de Nascimento: </label>
-    <input id="dataNascimentoInput" class="txtWhiteBox" placeholder="Data de Nascimento" type="date">
+            <label id="headerNome" for="nomeInput" class="headerWhiteBox">Nome </label>
+            <input id="nomeInput" class="fieldsWhiteBox"  placeholder="Nome" type="text">
 
 
-    <label for="telefoneInput"> Telefone: </label>
-    <input id="telefoneInput" class="txtWhiteBox"  placeholder=" Telefone" type="text">
+            <label id="headerData" for="dataNascimentoInput" class="headerWhiteBox">Data de Nascimento </label>
+            <input id="dataNascimentoInput" class="fieldsWhiteBox" placeholder="Data de Nascimento" type="date">
 
 
-    <label for="cursoInput"> Curso: </label>
-    <input id="cursoInput" class="txtWhiteBox"  placeholder=" Curso" type="text">
-
-    <label for="habilitacaoInput"> Telefone: </label>
-    <input id="habilitacaoInput" class="txtWhiteBox"  placeholder=" Habilitação" type="text">
-
-    <span class="espaco"> </span>
-    <h4>Endereço</h4>
-
-    <label for="ruaInput"> Rua: </label>
-    <input id="ruaInput" class="txtWhiteBox"  placeholder=" Rua" type="text">
+            <label id="headerTelefone" for="telefoneInput" class="headerWhiteBox">Telefone </label>
+            <input id="telefoneInput" class="fieldsWhiteBox"  placeholder="Telefone" type="text">
 
 
-    <label for="numeroInput"> Número: </label>
-    <input id="numeroInput" class="txtWhiteBox"  placeholder=" número" type="text">
+            <label id="headerCurso" for="cursoInput" class="headerWhiteBox">Curso </label>
+            <input id="cursoInput" class="fieldsWhiteBox"  placeholder="Curso" type="text">
 
-    <label for="cidadeInput"> Cidade: </label>
-    <input id="cidadeInput" class="txtWhiteBox"  placeholder=" Cidade" type="text">
+            <label id="headerHabilitacao" for="habilitacaoInput" class="headerWhiteBox">Habilitação </label>
+            <input id="habilitacaoInput" class="fieldsWhiteBox"  placeholder="Habilitação" type="text">
 
-    <span class="espaco1"> </span>
+            <span class="espaco1"> </span>
+            <h4>Endereço</h4>
 
-    <button id="botaoDeEnvio" class="botaodeEnvio" > Salvar </button>
-
-    <div id="conteudo"></div>
-
-
-</div>
-
-<script>
-    
-    const onButtonClick = () => {
-
-    const obj = {
-        nomeInput:            document.getElementById("nomeInput").value,
-        dataNascimentoInput:  document.getElementById("dataNascimentoInput").value,
-        cursoInput:           document.getElementById("cursoInput").value,
-    };
-    
-    // printa na tela as informações atraves de um alert
-    alert(obj.nomeInput, obj.cursoInput);
-
-    if (typeof (obj.dataNascimentoInput) == "") {
-        alert("não digitou algum campo");
-        document.getElementById("nomeInput").innerHTML = "campo vazio";
-    }
+            <label for="ruaInput" class="headerWhiteBox">Rua </label>
+            <input id="ruaInput" class="fieldsWhiteBox"  placeholder="Rua" type="text">
 
 
-    }
+            <label for="numeroInput" class="headerWhiteBox">Número </label>
+            <input id="numeroInput" class="fieldsWhiteBox"  placeholder="Número" type="text">
 
-    // const printaOla = () => {
-    //     console.log("olá");
-    // }
+            <label for="cidadeInput" class="headerWhiteBox">Cidade </label>
+            <input id="cidadeInput" class="fieldsWhiteBox"  placeholder="Cidade" type="text">
 
-    document.getElementById("botaoDeEnvio").addEventListener("click", () => {onButtonClick()});
-    // document.getElementById("conteudo").innerHTML = "<h2>Oláaaa</h2>"
+            <span class="espaco1"> </span>
 
-    // setInterval( () => {printaOla()}, 1000);
+            <button id="botaoDeEnvio" class="botaodeEnvio" >Salvar </button>
 
-</script>
-
+            <div id="conteudo"></div>
 
 
+        </div>
 
-</body>
+        <script>
+            
+            const onButtonClick = () => {
+
+                const obj = {
+                    nomeInput:              document.getElementById("nomeInput").value,
+                    dataInput:              document.getElementById("dataNascimentoInput").value,
+                    telefoneInput:          document.getElementById("telefoneInput").value,
+                    cursoInput:             document.getElementById("cursoInput").value,
+                    habilitacaoInput:       document.getElementById("habilitacaoInput").value,
+                };
+                
+                // printa na tela as informações atraves de um alert
+                //alert(obj.nomeInput, obj.cursoInput);
+
+                if (obj.nomeInput == "") {
+                    document.getElementById("headerNome").innerHTML = "Nome" + " <span id='ver'>* </span>";
+                }
+                if (obj.dataInput == "") {
+                    document.getElementById("headerData").innerHTML = "Data de Nascimento" + " <span id='ver'>* </span>";
+                }
+                if (obj.telefoneInput == "") {
+                    document.getElementById("headerTelefone").innerHTML = "Telefone" + " <span id='ver'>* </span>";
+                }
+                if (obj.cursoInput == "") {
+                    document.getElementById("headerCurso").innerHTML = "Curso" + " <span id='ver'>* </span>";
+                }
+                if (obj.habilitacaoInput == "") {
+                    document.getElementById("headerHabilitacao").innerHTML = "Habilitação" + " <span id='ver'>* </span>";
+                }
+
+
+            }
+
+            // const printaOla = () => {
+            //     console.log("olá");
+            // }
+
+            document.getElementById("botaoDeEnvio").addEventListener("click", () => {onButtonClick()});
+            // document.getElementById("conteudo").innerHTML = "<h2>Oláaaa</h2>"
+
+            // setInterval( () => {printaOla()}, 1000);
+
+        </script>
+
+
+
+
+    </body>
+
 </html>

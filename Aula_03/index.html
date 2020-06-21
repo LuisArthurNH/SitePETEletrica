@@ -83,9 +83,9 @@
                     telefoneInput:     document.getElementById("telefoneInput").value,
                     cursoInput:        document.getElementById("cursoInput").value,
                     habilitacaoInput:  document.getElementById("habilitacaoInput").value,
-                    RuaInput:          document.getElementById("ruaInput").value,
-                    NumeroInput:       document.getElementById("numeroInput").value,
-                    CidadeInput:       document.getElementById("cidadeInput").value,
+                    ruaInput:          document.getElementById("ruaInput").value,
+                    numeroInput:       document.getElementById("numeroInput").value,
+                    cidadeInput:       document.getElementById("cidadeInput").value,
 
                 };
                 
@@ -93,7 +93,6 @@
                 //alert(obj.nomeInput, obj.cursoInput);
 
                 if (obj.nomeInput == "") {
-                    alert("entrou");
                     document.getElementById("nomeHeader").innerHTML = "Nome" + " <span id='ver'>* </span>";
                 }
                 if (obj.dataInput == "") {
@@ -112,7 +111,7 @@
                     document.getElementById("ruaHeader").innerHTML = "Rua" + " <span id='ver'>* </span>";
                 }
                 if (obj.numeroInput == "") {
-                    document.getElementById("numeroHeader").innerHTML = "Número" <span id='ver'>* </span>";
+                    document.getElementById("numeroHeader").innerHTML = "Número" + "<span id='ver'>* </span>";
                 }
                 if (obj.cidadeInput == "") {
                     document.getElementById("cidadeHeader").innerHTML = "Cidade" + " <span id='ver'>* </span>";

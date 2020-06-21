@@ -27,17 +27,25 @@
 
         <div class="whiteBoxIndex d-flex flex-column">
 
-            <h2 id="text1">Fazer login</h2>
-
-            <label id="emailLabel" for="emailInput"></label>
-            <input id="emailInput" placeholder="email" type="text">
-
+            <div class="logo-container">
+                <img src="../images/logopet.png" id="logopet">
+            </div>
 
 
+            <h2 id="textFazerLog">Fazer login</h2>
+            <h4 id="textFacaLog">Use sua conta PET</h4>
+
+            
+            <input id="emailInput" placeholder="E-mail or phone number" type="text">
+            <label id="emailLabel" for="emailInput">Esqueceu seu e-mail?</label>
+
+            <div id="textLoginPc"> Não está no seu computador? Use uma janela de navegação privada para fazer login. </div>
 
 
+            <div id="botaoProx">
+                <button id="botaoProxima">Próxima</button>
+            </div>
 
-            <button id="botaoCadastro" class="botaoCadastro" >sim, entrar</button>
 
             <div id="conteudo"></div>
 
@@ -46,7 +54,7 @@
 
         <script>
 
-            document.getElementById("botaoCadastro").addEventListener("click", () => {onButtonClick()});
+            document.getElementById("botaoProxima").addEventListener("click", () => {onButtonClick()});
             const onButtonClick = () => {
 
                 location.href = "./form.html"

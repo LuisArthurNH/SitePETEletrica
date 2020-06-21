@@ -31,19 +31,67 @@ h1 {
     padding: 2%;
     width: 35%;
     height: 100%;
+    border-radius: 10px;
+    border-color: grey;
 }
 
-#text1 {
+.logo-container{
+    text-align: center;   
+}
+
+#logopet{
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+#textFazerLog {
     text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.5%;
 }
 
-.botaodeEnvio
-{
+#textFacaLog{
+    text-align: center;
+    font-size: 150%;
+    color: grey;
+    margin-bottom: 5.5%;
+}
+
+#emailInput{
+    padding: 18px;
+    font-size: 150%;
+    border-color: grey;
+    border-radius: 5px;
+}
+
+#emailLabel{
+    color: rgb(33, 84, 250);
+    font-size:120%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+#textLoginPc{
+    color: grey;
+    font-size:22px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+#botaoProx{
+    text-align: right;
+}
+
+#botaoProxima{
     color: white;
     background-color: royalblue;
-    /* padding: 500px; */
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-weight: bold;
-    
+    border-radius: 5px;
 }
 
 
@@ -57,6 +105,7 @@ h1 {
     padding: 2%;
     width: 35%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .labelWhiteBox{
@@ -68,6 +117,8 @@ h1 {
     margin-top: 0px;
     margin-bottom: 5px;
     padding-left: 1%;
+    /* padding: 1.2%; */
+    border-radius: 4px;
 
 }
 
@@ -88,12 +139,13 @@ h1 {
 
 }
 
-.botaoCadastro
+#botaoDeEnvio
 {
     color: white;
     background-color: royalblue;
     padding: 5px;
     font-weight: bold;
+    border-radius: 5px;
     
 }
 

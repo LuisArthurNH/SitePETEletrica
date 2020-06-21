@@ -1,45 +1,70 @@
+<!doctype html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title> PET Elétrica UFJF </title>
+
+        <!-- CSS  -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="../images/logopetslack.png">
+
+        <!-- JavaScript -->
+        <!-- <script src="script.js" type="javascript" ></script> -->
+        
+    </head>
+
+
 <body class="d-flex flex-column align-items-center">
 
     <h1> Bem vindo ao site do PET Elétrica </h1>
 
     
-    <div class="whitebox d-flex flex-column">
+    <div class="whiteBoxForm d-flex flex-column">
         <h2>Cadastrar Estudante</h2>
 
         <span class="espaco1"> </span>
         <h4>Geral</h4>
 
 
-        <label id="headerNome" for="nomeInput" class="headerWhiteBox">Nome </label>
+        <label id="nomeLabel" for="nomeInput" class="LabelWhiteBox">Nome </label>
         <input id="nomeInput" class="fieldsWhiteBox"  placeholder="Nome" type="text">
 
 
-        <label id="headerData" for="dataNascimentoInput" class="headerWhiteBox">Data de Nascimento </label>
+        <label id="dataLabel" for="dataNascimentoInput" class="LabelWhiteBox">Data de Nascimento </label>
         <input id="dataNascimentoInput" class="fieldsWhiteBox" placeholder="Data de Nascimento" type="date">
 
 
-        <label id="headerTelefone" for="telefoneInput" class="headerWhiteBox">Telefone </label>
+        <label id="telefoneLabel" for="telefoneInput" class="LabelWhiteBox">Telefone </label>
         <input id="telefoneInput" class="fieldsWhiteBox"  placeholder="Telefone" type="text">
 
 
-        <label id="headerCurso" for="cursoInput" class="headerWhiteBox">Curso </label>
+        <label id="cursoLabel" for="cursoInput" class="LabelWhiteBox">Curso </label>
         <input id="cursoInput" class="fieldsWhiteBox"  placeholder="Curso" type="text">
 
-        <label id="headerHabilitacao" for="habilitacaoInput" class="headerWhiteBox">Habilitação </label>
+        <label id="habilitacaoLabel" for="habilitacaoInput" class="LabelWhiteBox">Habilitação </label>
         <input id="habilitacaoInput" class="fieldsWhiteBox"  placeholder="Habilitação" type="text">
 
         <span class="espaco1"> </span>
         <h4>Endereço</h4>
 
-        <label for="ruaInput" class="headerWhiteBox">Rua </label>
+        <label id="ruaLabel" for="ruaInput" class="LabelWhiteBox">Rua </label>
         <input id="ruaInput" class="fieldsWhiteBox"  placeholder="Rua" type="text">
 
 
-        <label for="numeroInput" class="headerWhiteBox">Número </label>
+        <label id="numeroLabel" for="numeroInput" class="LabelWhiteBox">Número </label>
         <input id="numeroInput" class="fieldsWhiteBox"  placeholder="Número" type="text">
 
-        <label for="cidadeInput" class="headerWhiteBox">Cidade </label>
+        <label id="cidadeLabel" for="cidadeInput" class="LabelWhiteBox">Cidade </label>
         <input id="cidadeInput" class="fieldsWhiteBox"  placeholder="Cidade" type="text">
+
+
 
         <span class="espaco1"> </span>
 
@@ -49,4 +74,61 @@
 
 
     </div>
+
+    <script>
+            
+        const onButtonClick = () => {
+
+            const obj = {
+                nomeInput:         document.getElementById("nomeInput").value,
+                dataInput:         document.getElementById("dataNascimentoInput").value,
+                telefoneInput:     document.getElementById("telefoneInput").value,
+                cursoInput:        document.getElementById("cursoInput").value,
+                habilitacaoInput:  document.getElementById("habilitacaoInput").value,
+                ruaInput:          document.getElementById("ruaInput").value,
+                numeroInput:       document.getElementById("numeroInput").value,
+                cidadeInput:       document.getElementById("cidadeInput").value,
+
+            };
+            
+            // printa na tela as informações atraves de um alert
+            //alert(obj.nomeInput, obj.cursoInput);
+
+            if (obj.nomeInput == "") {
+                document.getElementById("nomeLabel").innerHTML = "Nome" + " <span id='ver'>* </span>";
+            }
+            if (obj.dataInput == "") {
+                document.getElementById("dataLabel").innerHTML = "Data de Nascimento" + " <span id='ver'>* </span>";
+            }
+            if (obj.telefoneInput == "") {
+                document.getElementById("telefoneLabel").innerHTML = "Telefone" + " <span id='ver'>* </span>";
+            }
+            if (obj.cursoInput == "") {
+                document.getElementById("cursoLabel").innerHTML = "Curso" + " <span id='ver'>* </span>";
+            }
+            if (obj.habilitacaoInput == "") {
+                document.getElementById("habilitacaoLabel").innerHTML = "Habilitação" + " <span id='ver'>* </span>";
+            }
+            if (obj.ruaInput == "") {
+                document.getElementById("ruaLabel").innerHTML = "Rua" + " <span id='ver'>* </span>";
+            }
+            if (obj.numeroInput == "") {
+                document.getElementById("numeroLabel").innerHTML = "Número" + " <span id='ver'>* </span>";
+            }
+            if (obj.cidadeInput == "") {
+                document.getElementById("cidadeLabel").innerHTML = "Cidade" + " <span id='ver'>* </span>";
+            }
+
+        }
+
+        // const printaOla = () => {
+        //     console.log("olá");
+        // }
+
+        document.getElementById("botaoDeEnvio").addEventListener("click", () => {onButtonClick()});
+        // document.getElementById("conteudo").innerHTML = "<h2>Oláaaa</h2>"
+
+        // setInterval( () => {printaOla()}, 1000);
+
+    </script>
 </body>

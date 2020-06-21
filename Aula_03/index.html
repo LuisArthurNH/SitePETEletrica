@@ -25,48 +25,19 @@
 
         <h1> Bem vindo ao site do PET Elétrica </h1>
 
+        <div class="whiteBoxIndex d-flex flex-column">
 
-        <div class="whitebox d-flex flex-column">
-            <h2>Cadastrar Estudante</h2>
+            <h2 id="text1">Fazer login</h2>
 
-            <span class="espaco1"> </span>
-            <h4>Geral</h4>
-
-
-            <label id="nomeHeader" for="nomeInput" class="headerWhiteBox">Nome </label>
-            <input id="nomeInput" class="fieldsWhiteBox"  placeholder="Nome" type="text">
+            <label id="emailLabel" for="emailInput"></label>
+            <input id="emailInput" placeholder="email" type="text">
 
 
-            <label id="dataHeader" for="dataNascimentoInput" class="headerWhiteBox">Data de Nascimento </label>
-            <input id="dataNascimentoInput" class="fieldsWhiteBox" placeholder="Data de Nascimento" type="date">
 
 
-            <label id="telefoneHeader" for="telefoneInput" class="headerWhiteBox">Telefone </label>
-            <input id="telefoneInput" class="fieldsWhiteBox"  placeholder="Telefone" type="text">
 
 
-            <label id="cursoHeader" for="cursoInput" class="headerWhiteBox">Curso </label>
-            <input id="cursoInput" class="fieldsWhiteBox"  placeholder="Curso" type="text">
-
-            <label id="habilitacaoHeader" for="habilitacaoInput" class="headerWhiteBox">Habilitação </label>
-            <input id="habilitacaoInput" class="fieldsWhiteBox"  placeholder="Habilitação" type="text">
-
-            <span class="espaco1"> </span>
-            <h4>Endereço</h4>
-
-            <label id="ruaHeader" for="ruaInput" class="headerWhiteBox">Rua </label>
-            <input id="ruaInput" class="fieldsWhiteBox"  placeholder="Rua" type="text">
-
-
-            <label id="numeroHeader" for="numeroInput" class="headerWhiteBox">Número </label>
-            <input id="numeroInput" class="fieldsWhiteBox"  placeholder="Número" type="text">
-
-            <label id="cidadeHeader" for="cidadeInput" class="headerWhiteBox">Cidade </label>
-            <input id="cidadeInput" class="fieldsWhiteBox"  placeholder="Cidade" type="text">
-
-            <span class="espaco1"> </span>
-
-            <button id="botaoDeEnvio" class="botaodeEnvio" >Salvar </button>
+            <button id="botaoCadastro" class="botaoCadastro" >sim, entrar</button>
 
             <div id="conteudo"></div>
 
@@ -74,63 +45,14 @@
         </div>
 
         <script>
-            
+
+            document.getElementById("botaoCadastro").addEventListener("click", () => {onButtonClick()});
             const onButtonClick = () => {
 
-                const obj = {
-                    nomeInput:         document.getElementById("nomeInput").value,
-                    dataInput:         document.getElementById("dataNascimentoInput").value,
-                    telefoneInput:     document.getElementById("telefoneInput").value,
-                    cursoInput:        document.getElementById("cursoInput").value,
-                    habilitacaoInput:  document.getElementById("habilitacaoInput").value,
-                    ruaInput:          document.getElementById("ruaInput").value,
-                    numeroInput:       document.getElementById("numeroInput").value,
-                    cidadeInput:       document.getElementById("cidadeInput").value,
-
-                };
-                
-                // printa na tela as informações atraves de um alert
-                //alert(obj.nomeInput, obj.cursoInput);
-
-                if (obj.nomeInput == "") {
-                    document.getElementById("nomeHeader").innerHTML = "Nome" + " <span id='ver'>* </span>";
-                }
-                if (obj.dataInput == "") {
-                    document.getElementById("dataHeader").innerHTML = "Data de Nascimento" + " <span id='ver'>* </span>";
-                }
-                if (obj.telefoneInput == "") {
-                    document.getElementById("telefoneHeader").innerHTML = "Telefone" + " <span id='ver'>* </span>";
-                }
-                if (obj.cursoInput == "") {
-                    document.getElementById("cursoHeader").innerHTML = "Curso" + " <span id='ver'>* </span>";
-                }
-                if (obj.habilitacaoInput == "") {
-                    document.getElementById("habilitacaoHeader").innerHTML = "Habilitação" + " <span id='ver'>* </span>";
-                }
-                if (obj.ruaInput == "") {
-                    document.getElementById("ruaHeader").innerHTML = "Rua" + " <span id='ver'>* </span>";
-                }
-                if (obj.numeroInput == "") {
-                    document.getElementById("numeroHeader").innerHTML = "Número" + "<span id='ver'>* </span>";
-                }
-                if (obj.cidadeInput == "") {
-                    document.getElementById("cidadeHeader").innerHTML = "Cidade" + " <span id='ver'>* </span>";
-                }
-
-
-
-
-
+                location.href = "./form.html"
             }
-
-            // const printaOla = () => {
-            //     console.log("olá");
-            // }
-
-            document.getElementById("botaoDeEnvio").addEventListener("click", () => {onButtonClick()});
-            // document.getElementById("conteudo").innerHTML = "<h2>Oláaaa</h2>"
-
-            // setInterval( () => {printaOla()}, 1000);
+            
+            
 
         </script>
 

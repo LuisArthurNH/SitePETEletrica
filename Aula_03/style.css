@@ -1,4 +1,6 @@
-
+/*****************************************************/
+/*                COMMOM STYLE                       */
+/*****************************************************/
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -13,21 +15,51 @@ body {
 }
 
 h1 {
-    color: darkblue;
-    text-shadow: 0.5px 1px white;
-    margin-top: 1.5%;
+    color: rgb(22, 20, 20);
+    text-shadow: 4px 4px 4px rgb(216, 197, 197);
+    margin-top: 2%;
     margin-bottom: 1.5%;
+    font-size: 48px;
 }
 
+/*****************************************************/
+/*                INDEX.HTML                         */
+/*****************************************************/
 
-.whitebox {
+.whiteBoxIndex {
     background-color: white;
-    padding: 15px;
-    width: 20%;
+    padding: 2%;
+    width: 35%;
     height: 100%;
 }
 
-.headerWhiteBox{
+#text1 {
+    text-align: center;
+}
+
+.botaodeEnvio
+{
+    color: white;
+    background-color: royalblue;
+    /* padding: 500px; */
+    font-weight: bold;
+    
+}
+
+
+/*****************************************************/
+/*               FORM.HTML                           */
+/*****************************************************/
+
+
+.whiteBoxForm {
+    background-color: white;
+    padding: 2%;
+    width: 35%;
+    height: 100%;
+}
+
+.labelWhiteBox{
     margin-top: 5px;
     font-weight: bold;
 }
@@ -56,7 +88,7 @@ h1 {
 
 }
 
-.botaodeEnvio
+.botaoCadastro
 {
     color: white;
     background-color: royalblue;
@@ -64,4 +96,7 @@ h1 {
     font-weight: bold;
     
 }
+
+
+
 

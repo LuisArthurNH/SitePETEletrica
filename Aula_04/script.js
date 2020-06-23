@@ -20,8 +20,6 @@ document.getElementById("botaoProxima").addEventListener("click", () => onButton
 
 const onButtonClickForm = () => {
 
-    alert("entrou aqui");
-
     const obj = {
         nomeInput:         document.getElementById("nomeInput").value,
         dataInput:         document.getElementById("dataNascimentoInput").value,

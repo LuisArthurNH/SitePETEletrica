@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste callback</title>
+</head>
+
+<body>
+    olá mundo
+
+    <script>
+
+        // function perguntaNome(transformaCallback){
+
+        //     const nome = prompt("seu nome");
+        //     const novonome = transformaCallback(nome);
+        //     return novonome;
+
+        // }
+
+        // const nome1 = perguntaNome(nome => nome.toUpperCase());
+        // console.log(nome1);
+
+
+        // const nome2 = perguntaNome(nome => nome.toLowerCase());
+        // console.log(nome2);
+
+        // const s = [1,2,3,4].map(x => x*x);
+
+        // console.log(s);
+
+        function filter(arr, filtroFunction){
+            const arrReturn = [];
+            for (let i = 0; i < arr.length; i++){
+                const elem = arr[i];
+
+                const shouldMaintain = filtroFunction(elem);
+
+                if(shouldMaintain){
+                    arrReturn.push(elem);
+                }
+
+            }
+            return arrReturn;
+        }
+
+        const meuArray = [1,2,3,4,5,6,7,8,9,10];
+
+        const filtraImpares = filter(meuArray, elem => elem % 2 === 0);
+        console.log(filtraImpares);
+
+        const isOdd =  elem => elem % 2 === 1;
+        const impares = filter(meuArray,isOdd);
+        console.log(impares);
+
+    </script>
+</body>
+
+</html>

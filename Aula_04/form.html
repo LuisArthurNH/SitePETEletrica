@@ -14,119 +14,68 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="../images/logopetslack.png">
-
-        <!-- JavaScript -->
-        <script src="script5.js" type="javascript" ></script>
         
     </head>
 
 
-<body class="d-flex flex-column align-items-center">
+    <body class="d-flex flex-column align-items-center">
 
-    <h1> Bem vindo ao site do PET Elétrica </h1>
+        <h1> Bem vindo ao site do PET Elétrica </h1>
 
-    
-    <div class="whiteBoxForm d-flex flex-column">
-        <h2>Cadastrar Estudante</h2>
+        
+        <div class="whiteBoxForm d-flex flex-column">
+            <h2>Cadastrar Estudante</h2>
 
-        <span class="espaco1"> </span>
-        <h4>Geral</h4>
-
-
-        <label id="nomeLabel" for="nomeInput" class="labelWhiteBox">Nome </label>
-        <input id="nomeInput" class="fieldsWhiteBox"  placeholder="Nome" type="text">
+            <span class="espaco1"> </span>
+            <h4>Geral</h4>
 
 
-        <label id="dataLabel" for="dataNascimentoInput" class="labelWhiteBox">Data de Nascimento </label>
-        <input id="dataNascimentoInput" class="fieldsWhiteBox" placeholder="Data de Nascimento" type="date">
+            <label id="nomeLabel" for="nomeInput" class="labelWhiteBox">Nome </label>
+            <input id="nomeInput" class="fieldsWhiteBox"  placeholder="Nome" type="text">
 
 
-        <label id="telefoneLabel" for="telefoneInput" class="labelWhiteBox">Telefone </label>
-        <input id="telefoneInput" class="fieldsWhiteBox"  placeholder="Telefone" type="text">
+            <label id="dataLabel" for="dataNascimentoInput" class="labelWhiteBox">Data de Nascimento </label>
+            <input id="dataNascimentoInput" class="fieldsWhiteBox" placeholder="Data de Nascimento" type="date">
 
 
-        <label id="cursoLabel" for="cursoInput" class="labelWhiteBox">Curso </label>
-        <input id="cursoInput" class="fieldsWhiteBox"  placeholder="Curso" type="text">
-
-        <label id="habilitacaoLabel" for="habilitacaoInput" class="labelWhiteBox">Habilitação </label>
-        <input id="habilitacaoInput" class="fieldsWhiteBox"  placeholder="Habilitação" type="text">
-
-        <span class="espaco1"></span>
-        <h4>Endereço</h4>
-
-        <label id="ruaLabel" for="ruaInput" class="labelWhiteBox">Rua </label>
-        <input id="ruaInput" class="fieldsWhiteBox"  placeholder="Rua" type="text">
+            <label id="telefoneLabel" for="telefoneInput" class="labelWhiteBox">Telefone </label>
+            <input id="telefoneInput" class="fieldsWhiteBox"  placeholder="Telefone" type="text">
 
 
-        <label id="numeroLabel" for="numeroInput" class="labelWhiteBox">Número </label>
-        <input id="numeroInput" class="fieldsWhiteBox"  placeholder="Número" type="text">
+            <label id="cursoLabel" for="cursoInput" class="labelWhiteBox">Curso </label>
+            <input id="cursoInput" class="fieldsWhiteBox"  placeholder="Curso" type="text">
 
-        <label id="cidadeLabel" for="cidadeInput" class="labelWhiteBox">Cidade </label>
-        <input id="cidadeInput" class="fieldsWhiteBox"  placeholder="Cidade" type="text">
+            <label id="habilitacaoLabel" for="habilitacaoInput" class="labelWhiteBox">Habilitação </label>
+            <input id="habilitacaoInput" class="fieldsWhiteBox"  placeholder="Habilitação" type="text">
 
+            <span class="espaco1"></span>
+            <h4>Endereço</h4>
 
-
-        <span class="espaco1"> </span>
-
-        <button id="botaoDeEnvio" class="botaodeEnvio" >Salvar </button>
-
-        <div id="conteudo"></div>
+            <label id="ruaLabel" for="ruaInput" class="labelWhiteBox">Rua </label>
+            <input id="ruaInput" class="fieldsWhiteBox"  placeholder="Rua" type="text">
 
 
-    </div>
+            <label id="numeroLabel" for="numeroInput" class="labelWhiteBox">Número </label>
+            <input id="numeroInput" class="fieldsWhiteBox"  placeholder="Número" type="text">
 
-    <script>
-            
-        const onButtonClick = () => {
+            <label id="cidadeLabel" for="cidadeInput" class="labelWhiteBox">Cidade </label>
+            <input id="cidadeInput" class="fieldsWhiteBox"  placeholder="Cidade" type="text">
 
-            const obj = {
-                nomeInput:         document.getElementById("nomeInput").value,
-                dataInput:         document.getElementById("dataNascimentoInput").value,
-                telefoneInput:     document.getElementById("telefoneInput").value,
-                cursoInput:        document.getElementById("cursoInput").value,
-                habilitacaoInput:  document.getElementById("habilitacaoInput").value,
-                ruaInput:          document.getElementById("ruaInput").value,
-                numeroInput:       document.getElementById("numeroInput").value,
-                cidadeInput:       document.getElementById("cidadeInput").value,
-            };
-            
-            // printa na tela as informações atraves de um alert
-            //alert(obj.nomeInput, obj.cursoInput);
 
-            if (obj.nomeInput == "") {
-                document.getElementById("nomeLabel").innerHTML = "Nome" + " <span id='ver'>* </span>";
-            }
-            if (obj.dataInput == "") {
-                document.getElementById("dataLabel").innerHTML = "Data de Nascimento" + " <span id='ver'>* </span>";
-            }
-            if (obj.telefoneInput == "") {
-                document.getElementById("telefoneLabel").innerHTML = "Telefone" + " <span id='ver'>* </span>";
-            }
-            if (obj.cursoInput == "") {
-                document.getElementById("cursoLabel").innerHTML = "Curso" + " <span id='ver'>* </span>";
-            }
-            if (obj.habilitacaoInput == "") {
-                document.getElementById("habilitacaoLabel").innerHTML = "Habilitação" + " <span id='ver'>* </span>";
-            }
-            if (obj.ruaInput == "") {
-                document.getElementById("ruaLabel").innerHTML = "Rua" + " <span id='ver'>* </span>";
-            }
-            if (obj.numeroInput == "") {
-                document.getElementById("numeroLabel").innerHTML = "Número" + " <span id='ver'>* </span>";
-            }
-            if (obj.cidadeInput == "") {
-                document.getElementById("cidadeLabel").innerHTML = "Cidade" + " <span id='ver'>* </span>";
-            }   
-        }
 
-        // const printaOla = () => {
-        //     console.log("olá");
-        // }
+            <span class="espaco1"> </span>
 
-        document.getElementById("botaoDeEnvio").addEventListener("click", () => {onButtonClick()});
-        // document.getElementById("conteudo").innerHTML = "<h2>Oláaaa</h2>"
 
-        // setInterval( () => {printaOla()}, 1000);
+            <button id="botaoDeEnvio">Salvar </button>
+        
 
-    </script>
-</body>
+
+
+        </div>
+
+        <!-- JavaScript -->
+        <script src="script.js" type="javascript"></script>
+                
+    </body>
+
+</html>

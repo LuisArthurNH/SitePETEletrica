@@ -22,6 +22,7 @@ h1 {
     font-size: 48px;
 }
 
+
 /*****************************************************/
 /*                INDEX.HTML                         */
 /*****************************************************/
@@ -30,7 +31,6 @@ h1 {
     background-color: white;
     padding: 2%;
     width: 35%;
-    height: 100%;
     border-radius: 10px;
     border-color: grey;
 }
@@ -46,6 +46,7 @@ h1 {
 
 #textFazerLog {
     text-align: center;
+    /* font-size: 100%; */
     font-weight: 600;
     margin-bottom: 1.5%;
 }
@@ -57,19 +58,12 @@ h1 {
     margin-bottom: 5.5%;
 }
 
-#emailInput{
-    padding: 18px;
-    font-size: 150%;
-    border-color: grey;
+.classInput{
+    padding: 10px;
+    font-size: 120%;
+    border: 1px solid grey;
     border-radius: 5px;
     margin-bottom: 5px;
-}
-
-#senhaInput{
-    padding: 18px;
-    font-size: 150%;
-    border-color: grey;
-    border-radius: 5px;
 }
 
 #esqueceuSenha{
@@ -129,6 +123,7 @@ h1 {
     margin-bottom: 5px;
     padding: 1.2%;
     border-radius: 4px;
+    border: 1px solid grey;
     width: 100%;
 
 }

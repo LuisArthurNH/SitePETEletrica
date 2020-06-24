@@ -1,21 +1,4 @@
 "use strict"
-/////////////////////////////////////////////////////////////////
-//
-// JS DO INDEX
-//
-/////////////////////////////////////////////////////////////////
-
-var el_i = document.getElementById("botaoProxima");
-
-if(el_i){
-    const onButtonClickIndex = () => {
-    location.href = "./form.html"
-    }
-
-
-    document.getElementById("botaoProxima").addEventListener("click", () => onButtonClickIndex());
-
-}
 
 /////////////////////////////////////////////////////////////////
 //
@@ -42,6 +25,9 @@ if (el_f){
 
         if (obj.nomeInput === ""){
             document.getElementById("nomeLabel").innerHTML = "Nome" + " <span id='ver'>* </span>";
+            // document.getElementById("fieldsWhiteBox").style.borderColor = "red";
+            // document.getElementById("nomeLabel").style.color = "red";
+
         }
         if (obj.dataInput === ""){
             document.getElementById("dataLabel").innerHTML = "Data de Nascimento" + " <span id='ver'>* </span>";

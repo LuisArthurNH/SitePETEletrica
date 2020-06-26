@@ -35,17 +35,78 @@ const obj = {
 // setInterval(() => {}, 1000);
 
 // criar um callback: que executa algo (a callback) enquanto a função do timeout é executada
-function minhaFuncaoComCallback(nome, callback){
-    setTimeout(() => {
-        callback();
-        console.log("ola de dentro do timeout");
-    }, 5000);
+// function minhaFuncaoComCallback(nome, callback){
+//     setTimeout(() => {
+//         callback();
+//         console.log("ola de dentro do timeout dps de 5s");
+//     }, 5000);
 
-    console.log(nome);
-    const nomes = nome.split(" ");
-    console.log(nomes[0]);
+//     console.log(nome);
+//     const nomes = nome.split(" ");
+//     console.log(nomes[0]);
+// }
+
+// minhaFuncaoComCallback("Luis Arthur Novais", function (){
+// console.log("dentro do callback");
+// });
+
+
+
+///////////////////////////////////////////////////////
+// Aula 05 
+//////////////////////////////////////////////////////
+
+// const arr =[1,2,3,4,5];
+
+// console.log(arr);
+
+// for (let i=0; i<arr.length;i++){
+//     const elem = arr[i];
+//     console.log(elem);
+// }
+
+// console.log("");
+
+// for (const elem of arr){
+//     console.log(elem);
+// }
+
+// console.log("");
+
+// arr.forEach((elem,index) =>{
+//     console.log(elem);
+// })
+
+// // map/reduce
+
+// const newArr = arr.map(elem =>elem*2);
+// console.log(newArr);
+
+// const filtered = arr.filter(elem => elem % 2 ===0);
+// console.log(filtered);
+
+// definition of class
+
+class Cachorro{
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    late(){
+        console.log("au au");
+    }
+
+    andar(passos){
+        console.log(`andou ${passos} passos`)
+    }
+
 }
 
-minhaFuncaoComCallback("Gustavo lopes", function (){
-console.log("dentro do callback");
-});
+const meuCachorro = new Cachorro("luluzinho", 24);
+meuCachorro.late();
+meuCachorro.andar(12);
+
+console.log(meuCachorro);
+
+// const meuCachorro2 = new Cachorro("mariazinha", 21);

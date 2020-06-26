@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PET Elétrica</title>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/logopetslack.png">
 </head>
-<body>
-    olá mundo
-    
-    <script>
-        // const searchParams = location.search();
-        // const url = url.split("?")[1]; // tira o primeiro "?"
-        // const pedacos = url.split("&"); // separa em parametros que vc criou
-        
-        // const todosPedacos = pedacos.map(pedaco => pedaco.split("=")); // map: p/ cada elemento do array ele faz o que ta na funcao que é dividir no igual
-        // console.log(todosPedacos);
+<body class="d-flex flex-column align-items-center">
 
-        const urlParams = new URLSearchParams(location.search());
-        const nome = urlParams.get("nome");
-        const dataNascimento = urlParams.get("dataNascimento");
+    <h1> Estudante Cadastrado </h1>
+
+    <div class="whiteBoxIndex d-flex flex-column">
+
+        <div class="logo-container">
+            <img src="../images/logopet.png" id="logopet">
+        </div>
 
         
-    </script>
+
+
+    </div>
+
+
+    <script src="s_e.js"></script>
     
+
 </body>
+    
 </html>

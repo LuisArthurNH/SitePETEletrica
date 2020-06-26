@@ -5,14 +5,16 @@
 //
 /////////////////////////////////////////////////////////////////
 
-var el_i = document.getElementById("botaoProxima");
+const onButtonClickIndex = () => {
+    obj = {
+        email:     document.getElementById("emailInput").value,
+        password:  document.getElementById("senhaInput").value,
+    };
 
-if(el_i){
-    const onButtonClickIndex = () => {
     location.href = "./form.html"
-    }
-
-
-    document.getElementById("botaoProxima").addEventListener("click", () => onButtonClickIndex());
-
 }
+
+
+document.getElementById("botaoProxima").addEventListener("click", () => onButtonClickIndex());
+
+

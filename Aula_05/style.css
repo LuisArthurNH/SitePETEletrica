@@ -1,11 +1,11 @@
 /*****************************************************/
 /*                COMMOM STYLE                       */
 /*****************************************************/
-body {
+body{
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+body{
     background-image: url("../images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
 
 }
 
-h1 {
+h1{
     color: rgb(22, 20, 20);
     text-shadow: 4px 4px 4px rgb(216, 197, 197);
     margin-top: 2%;
@@ -22,6 +22,10 @@ h1 {
     font-size: 48px;
 }
 
+h4{
+    margin-top: 10px;
+
+}
 
 /*****************************************************/
 /*                INDEX.HTML                         */
@@ -132,8 +136,8 @@ h1 {
     color: grey;
 }
 
-.espaco1{
-    margin-top: 10px;
+#espaco1{
+    margin-top: 100px;
     margin-bottom: 20px;
 }
 

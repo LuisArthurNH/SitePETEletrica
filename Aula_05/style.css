@@ -145,8 +145,15 @@ h4{
 #ver {
     color: red;
     font-weight: bold;
-    
+}
 
+.labelWhiteBoxa{
+    justify-content: space-between;
+}
+
+
+.space{
+    margin: 5px;
 }
 
 #botaoDeEnvio
@@ -159,6 +166,7 @@ h4{
     
 }
 
-
-
+/*****************************************************/
+/*                ESTUDANTE.HTML                     */
+/*****************************************************/
 

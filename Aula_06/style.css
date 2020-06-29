@@ -1,0 +1,172 @@
+/*****************************************************/
+/*                COMMOM STYLE                       */
+/*****************************************************/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h1{
+    color: rgb(22, 20, 20);
+    text-shadow: 4px 4px 4px rgb(216, 197, 197);
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+    font-size: 48px;
+}
+
+h4{
+    margin-top: 10px;
+
+}
+
+/*****************************************************/
+/*                INDEX.HTML                         */
+/*****************************************************/
+
+.whiteBoxIndex{
+    background-color: white;
+    padding: 2%;
+    width: 35%;
+    border-radius: 10px;
+    border-color: grey;
+}
+
+.logo-container{
+    text-align: center;   
+}
+
+#logopet{
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+#textFazerLog {
+    text-align: center;
+    /* font-size: 100%; */
+    font-weight: 600;
+    margin-bottom: 1.5%;
+}
+
+#textFacaLog{
+    text-align: center;
+    font-size: 150%;
+    color: grey;
+    margin-bottom: 5.5%;
+}
+
+.classInput{
+    padding: 10px;
+    font-size: 120%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#esqueceuSenha{
+    color: rgb(33, 84, 250);
+    font-size:120%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+#textLoginPc{
+    color: grey;
+    font-size:22px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+#criarConta{
+    color: rgb(33, 84, 250);
+    font-size:120%;
+    margin-top: 1%;
+    font-weight: bold;
+}
+
+#botaoProxima{
+    color: white;
+    background-color: royalblue;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/*****************************************************/
+/*               FORM.HTML                           */
+/*****************************************************/
+
+
+.whiteBoxForm {
+    background-color: white;
+    padding: 2%;
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.labelWhiteBox{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.fieldsWhiteBox {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 1.2%;
+    border-radius: 4px;
+    border: 1px solid grey;
+    width: 100%;
+
+}
+
+#dataNascimentoInput {
+    color: grey;
+}
+
+#espaco1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+/* Como é um ID, usar # */
+#ver {
+    color: red;
+    font-weight: bold;
+}
+
+.labelWhiteBoxa{
+    justify-content: space-between;
+}
+
+
+.space{
+    margin: 5px;
+}
+
+#botaoDeEnvio
+{
+    color: white;
+    background-color: royalblue;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+/*****************************************************/
+/*                ESTUDANTE.HTML                     */
+/*****************************************************/
+

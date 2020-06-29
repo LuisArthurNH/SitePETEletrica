@@ -1,0 +1,45 @@
+<script>
+    'use strict'
+
+    function exibeMensagem(mensagem) {
+        console.log(mensagem);
+    }
+
+    const exibeMensagem2 = function (mensagem) {
+        console.log(mensagem);
+    }
+
+    const exibeMensagem3 = (mensagem) => {
+        console.log(mensagem);
+    }
+
+    let minhavar = 5;
+    const varc = 5;
+
+
+    const mensagem = "hola mundo";
+    const mensagem2 = mensagem + " 2";
+    const mensagem3 = `${mensagem} 3`;
+
+    exibeMensagem(varc);
+    exibeMensagem2(mensagem2);
+    exibeMensagem3(mensagem3);
+
+    const obj = {
+        minhaChave: 5,
+        outraChave: "relou",
+        outroObj: {
+            chave2: "a",
+            chave3: "b"
+        }
+    };
+
+    exibeMensagem(obj.outroObj)
+
+    const meuArray = [2,"asas",obj];
+
+    exibeMensagem(meuArray);
+
+
+
+</script>
